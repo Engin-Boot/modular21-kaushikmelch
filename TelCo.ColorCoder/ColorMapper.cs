@@ -2,7 +2,7 @@
 
 namespace TelCo.ColorCoder
 {
-    class Program
+    class ColorMapper
     {
         /// <summary>
         /// Array of Major colors
@@ -13,21 +13,9 @@ namespace TelCo.ColorCoder
         /// </summary>
         public static Color[] colorMapMinor;
         /// <summary>
-        /// data type defined to hold the two colors of clor pair
-        /// </summary>
-        internal class ColorPair
-        {
-            internal Color majorColor;
-            internal Color minorColor;
-            public override string ToString()
-            {
-                return string.Format("MajorColor:{0}, MinorColor:{1}", majorColor.Name, minorColor.Name);
-            }
-        }
-        /// <summary>
         /// Static constructor required to initialize static variable
         /// </summary>
-        static Program()
+        static ColorMapper()
         {
             colorMapMajor = new Color[] { Color.White, Color.Red, Color.Black, Color.Yellow, Color.Violet };
             colorMapMinor = new Color[] { Color.Blue, Color.Orange, Color.Green, Color.Brown, Color.SlateGray };

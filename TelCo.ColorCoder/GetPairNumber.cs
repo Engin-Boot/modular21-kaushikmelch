@@ -1,9 +1,9 @@
 ﻿using System;
-using static TelCo.ColorCoder.Program;
+using static TelCo.ColorCoder.ColorMapper;
 
 namespace TelCo.ColorCoder
 {
-    class GetNumber
+    class GetPairNumber
     {
         public static int GetPairNumberFromColor(ColorPair pair)
         {
