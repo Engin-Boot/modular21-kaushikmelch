@@ -8,6 +8,8 @@ namespace TelCo.ColorCoder
     {
         private static void Main(string[] args)
         {
+            ColorManual.printManual();
+
             int pairNumber = 4;
             ColorPair testPair1 = GetColorPair.GetColorFromPairNumber(pairNumber);
             Console.WriteLine("[In]Pair Number: {0},[Out] Colors: {1}\n", pairNumber, testPair1);
