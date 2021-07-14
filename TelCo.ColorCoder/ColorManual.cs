@@ -7,11 +7,11 @@ namespace TelCo.ColorCoder
         public static void printManual()
         {
             int pairnumber = 1;
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < ColorArrays.colorMapMajor.Length; i++)
             {
-                for (int j = 0; j < 5; j++)
+                for (int j = 0; j < ColorArrays.colorMapMinor.Length; j++)
                 {
-                    Console.WriteLine("Pair Number: {0}  Major{1}  Minor{2}\n", pairnumber, ColorMapper.colorMapMajor[i], ColorMapper.colorMapMinor[j]);
+                    Console.WriteLine("Pair Number: {0}  Major{1}  Minor{2}\n", pairnumber, ColorArrays.colorMapMajor[i], ColorArrays.colorMapMinor[j]);
                     pairnumber++;
                 }
             }

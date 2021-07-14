@@ -1,5 +1,5 @@
 ﻿using System;
-using static TelCo.ColorCoder.ColorMapper;
+using static TelCo.ColorCoder.ColorArrays;
 
 namespace TelCo.ColorCoder
 {
