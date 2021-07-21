@@ -8,8 +8,16 @@ namespace TelCo.ColorCoder
     {
         private static void Main(string[] args)
         {
-            ColorManual.printManual();
+            //Manual Print
+            ColorManual.PrintRefManual(new PrintManual());
 
+            //Behavioural Test for Reference Manual 
+            PrintManualTest testmanual = new PrintManualTest();
+            ColorManual.PrintRefManual(testmanual);
+            //Asserts that all 25 lines of Manual are printed
+            Debug.Assert(testmanual.WriteConsoleCall == 25);
+
+            //Pair Number and Color Pair Tests
             int pairNumber = 4;
             ColorPair testPair1 = GetColorPair.GetColorFromPairNumber(pairNumber);
             Console.WriteLine("[In]Pair Number: {0},[Out] Colors: {1}\n", pairNumber, testPair1);

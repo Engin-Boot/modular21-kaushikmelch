@@ -2,19 +2,20 @@
 
 namespace TelCo.ColorCoder
 {
-    class ColorManual
+    public static class ColorManual
     {
-        public static void printManual()
+        public static void PrintRefManual(IWrite writer)
         {
             int pairnumber = 1;
             for (int i = 0; i < ColorArrays.colorMapMajor.Length; i++)
             {
                 for (int j = 0; j < ColorArrays.colorMapMinor.Length; j++)
                 {
-                    Console.WriteLine("Pair Number: {0}  Major{1}  Minor{2}\n", pairnumber, ColorArrays.colorMapMajor[i], ColorArrays.colorMapMinor[j]);
+                    writer.WriteLine("Pair Number:"+pairnumber+" Major"+ColorArrays.colorMapMajor[i]+" Minor"+ColorArrays.colorMapMinor[j]);
                     pairnumber++;
                 }
             }
         }
     }
+
 }
